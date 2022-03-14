@@ -1,0 +1,415 @@
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        @media (min-width:801px) and (max-width:1024) {
+            .aboutus {
+                font-size: 18px;
+            }
+        }
+
+        .img-fluid {
+            border-radius: 50%;
+            max-width: 50px;
+            padding-left: 10px;
+        }
+
+        header {
+            background-image: url(https://images.pexels.com/photos/6001208/pexels-photo-6001208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+            background-size: cover;
+            overflow: hidden;
+            width: 98.8vw;
+            min-height: 100vh;
+        }
+
+        #header-content {
+            padding: 200px 50px 100px;
+        }
+
+        .nav-wrapper {
+            width: 100%;
+            background-color: rgba(24, 19, 12, 0.404);
+            opacity: 80%;
+            overflow: auto;
+            position: fixed;
+            top: 0;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(0, 0, 0, 0.623);
+        }
+
+        .nav-wrapper a {
+            float: left;
+            text-align: center;
+            padding: 5px 20px 5px 20px;
+            text-shadow: 4px 4px 15px rgb(0, 0, 0);
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family:'Montserrat';
+        }
+        #navbarphone{
+            float:right;
+            color:rgba(240, 177, 105, 0.719);
+            font-size: 25px;
+            font-family:'Montserrat';
+            text-shadow: 4px 4px 15px rgba(211, 132, 42, 0.664);
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgba(247, 243, 238, 0.904);
+            font-size: 60px;
+            opacity: 80%;
+            text-shadow: 4px 4px 10px rgb(0, 0, 0);
+            font-family:'Montserrat' ;
+        }
+
+        h2 {
+            color: rgba(247, 243, 238, 0.979);
+            font-size: 70px;
+            opacity: 80%;
+           /* text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.596);
+            -webkit-text-stroke: 2px rgba(0, 0, 0, 0.445);*/
+            text-shadow: 4px 4px 10px rgba(182, 104, 15, 0.521);
+            -webkit-text-stroke: 2px rgba(182, 104, 15, 0.521);
+            text-align: center;
+            font-family: 'Montserrat';
+
+        }
+
+        input[type=text] {
+            width: 500px;
+            height: 50px;
+            background-color: white;
+            opacity: 60%;
+            box-shadow: 0 0 15px 4px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.568);
+            font-family:'Montserrat';
+            color: rgba(182, 104, 15, 0.521);
+        }
+
+        input[type=number] {
+            width: 500px;
+            height: 50px;
+            background-color: white;
+            opacity: 60%;
+            box-shadow: 0 0 15px 4px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.568);
+            font-family:'Montserrat';
+            color: rgba(182, 104, 15, 0.521);
+        }
+
+        input[type=email] {
+            width: 500px;
+            height: 50px;
+            background-color: white;
+            opacity: 60%;
+            box-shadow: 0 0 15px 4px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.568);
+            font-family:'Montserrat';
+            color:rgba(182, 104, 15, 0.521);
+        }
+
+        #email{
+            color:rgba(36, 33, 33, 0.884);
+        }
+
+        #submit {
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            background-color: rgba(240, 177, 105, 0.719);
+            color: rgba(43, 40, 40, 0.925);
+            opacity: 70%;
+            margin-top: 15px;
+            box-shadow: 0 0 15px 4px;
+            border-radius: 20px;
+            border: 1px solid rgba(75, 49, 16, 0.767);
+            font-family:'Montserrat';
+
+        }
+
+        #submit:hover {
+            border: 4px solid rgba(212, 160, 14, 0.534);
+            box-shadow: 0 0 15px 4px rgba(211, 180, 40, 0.473);
+        }
+        #headertext{
+            font-family:'Montserrat';
+            color:white;
+            opacity:70%;
+            font-size:22;
+            padding-left:8px;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+
+        #aboutus {
+            font-family: 'Montserrat';
+            font-size: 22px;
+            padding: 65px 25px 65px 25px;
+            float: left;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            width: 500px;
+            background-color: rgba(44, 39, 39, 0.041);
+            margin-top: -1px;
+            text-align: center;
+            justify-self: center;
+        }
+
+        #contacts {
+            float: right;
+            background-color: rgba(44, 39, 39, 0.041);
+            text-align: center;
+            width: 700px;
+            padding: 50px 10px 50px 10px;
+            font-family:'Montserrat';
+            font-size: 22px;
+            grid-column: 2/3;
+            grid-row: 4/5;
+
+        }
+
+        #aboutusimg {
+            float: right;
+            height: auto;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            justify-self: center;
+        }
+
+        #aboutustitle {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            justify-self: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 2 minmax(90px 1fr);
+            grid-template-rows: 7 1fr;
+            align-items: center;
+            align-items: start;
+            grid-gap: 10px;
+            padding-left:100px;
+            padding-right:100px;
+        }
+
+        #bookavisit {
+            margin-top: 50px;
+            grid-column: 1/3;
+            grid-row: 3/4;
+            justify-self: center;
+        }
+
+        #contactsimg {
+            float: left;
+            width: 510px;
+            height: auto;
+            grid-column: 1/2;
+            grid-row: 4/5;
+            justify-self: center;
+        }
+
+        #contactsinfo {
+            background-color: rgba(44, 39, 39, 0.041);
+            height: 625px;
+            justify-self: center;
+            padding: 10px 15px 10px 15px;
+            font-family: 'Montserrat';
+            font-size: 22px;
+        }
+
+        #gallery {
+            grid-column: 1/3;
+            grid-row: 5/6;
+            justify-self: center;
+            
+        }
+
+        #imagecontainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: auto;
+            
+            
+        }
+
+        .galleryimages {
+            max-width: 30%;
+        }
+
+        #column {
+           /* padding: 0px 5px;*/
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        footer {
+            background-color: rgba(44, 39, 39, 0.096);
+            height: 100px;
+            text-align: center;
+            font-size: 20;
+            font-family: monospace;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<header id="header">
+    <nav id="nav-bar">
+        <div class="nav-wrapper">
+            <a class="navbar-brand" href="/">
+                <div class="logo-image">
+                    <img id="header-img"
+                        src="https://www.kindpng.com/picc/m/178-1785005_full-color-cat-logo-no-text-on-circle.png"
+                        class="img-fluid">
+            </a>
+            <a class="nav-link" href="#aboutus">About</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#bookavisit">Book a visit</a>
+        </div>
+        <div id="navbarphone"> 
+            <p> +46 (910) 123 45 67</p>
+        </div>
+        </div>
+    </nav>
+    <div id="header-content">
+        <h1>
+            Give the cat a family
+        </h1>
+        <p id="headertext"> Talk with our best cat experts </p>
+        <form id="headform">
+            <input id="email" type="email" name="email" placeholder="     Enter your email here" required>
+            <br>
+
+            <button action="https://www.freecodecamp.com/email-submit" id="submit" type="submit">Contact me</button>
+        </form>
+    </div>
+
+</header>
+
+<body>
+    <div class="wrapper">
+        <div id="aboutustitle">
+            <h2>
+                About us
+            </h2>
+        </div>
+        <div id="aboutusimg">
+            <img width=500px
+                src="https://images.pexels.com/photos/6001370/pexels-photo-6001370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Girl hold a cat">
+        </div>
+        <div>
+            <p id="aboutus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem velit,
+                consacere dignissimos in nostrum consectetur eveniet non repellendus praesentium error incidunt optio
+                adipisci. Soluta, laudantium vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                nostrum, aspernatur praesentium maxime animi perferendis id voluptatum aliquid deleniti magni, obcaecati
+                quasi eius pariatur vero autem reiciendis et recusandae minus. <br>Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Iure quibusdam officia, itaque, laboriosam iste explicabo ipsum eius
+                soluta obcaecati placeat, enim animi consectetur. Repellat illo error, ea libero quaerat nesciunt?
+                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident accusantium, nisi quos ipsam
+                nihil, ratione consequatur libero cumque atque voluptatem aliquam illum, earum dolores a corporis? Velit
+                unde ut dolores. a corporis? Velit unde ut dolores
+            </p>
+        </div>
+
+        <div id="bookavisit">
+            <h2>
+                Book a visit
+            </h2>
+        </div>
+        <div id="contactsimg">
+            <img id="contactsimg" src="https://images.pexels.com/photos/7716385/pexels-photo-7716385.jpeg"
+                alt="woman plays with ginger cat">
+        </div>
+
+        <div id="contactsinfo">
+            <h3>Would you like to see our cats in real life?</h3>
+            <p> Leave your contact information here so we get back to you with booking options!<br> Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Possimus pariatur porro fugiat hic maxime sit molestiae,
+                explicabo recusandae! Exercitationem pariatur, dolore beatae facere veritatis odit optio corporis cumque
+                illo facilis.</p>
+            <form id="form">
+                <label for="name" id="name-label" name="name" class="labels"> Name: </label>
+                <input id="name" type="text" placeholder="   Enter your name here" required>
+                <br><br>
+                <label for="emailaddress" id="email-label" name="emailaddress" class="labels"> E-mail:</label>
+                <input id="emailaddress" type="email" placeholder="   Enter your email here" required>
+                <br><br>
+                <label for="number" id="number-label" name="phone" class="labels"> Phone: </label>
+                <input id="number" min="1" max="120" type="number" placeholder="   Enter your phone here">
+                <br><br>
+                <button action="https://www.freecodecamp.com/email-submit" id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="gallery">
+            <h2> Our cats </h2>
+        </div>
+    </div>
+    <div id="imagecontainer">
+        <div id="column">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/5720847/pexels-photo-5720847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="grey cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/4723830/pexels-photo-4723830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="cat with white chest">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/6055365/pexels-photo-6055365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="twin cats">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/5989170/pexels-photo-5989170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="white blue-eyed cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/5732307/pexels-photo-5732307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="tiger cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/6291266/pexels-photo-6291266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="orange cat">
+        </div>
+        <div class="column">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/1441586/pexels-photo-1441586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="black and white cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/1870302/pexels-photo-1870302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="ginger cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/7742916/pexels-photo-7742916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="big cat ">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/2688982/pexels-photo-2688982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="black kitten">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/1761400/pexels-photo-1761400.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="british cat">
+            <img class="galleryimages"
+                src="https://images.pexels.com/photos/8408082/pexels-photo-8408082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="kitten">
+        </div>
+    </div>
+    </div>
+
+</body>
+<footer>
+    <p> © Mariia Ujica <br> Assignment for FreeCodeCamp <br> 2022 </p>
+</footer>
+
+</html>
